@@ -51,6 +51,25 @@ function loadJSON(drinkList){
 	$(drink2Color).html(drinkList.drinklist[1].color);
 	$("#drink2Color").append(drink2Color);
 
+	//third drink
+	var drink3 = $("<div>");
+	$(drink3).html(drinkList.drinklist[2].name);
+	$("#drink3").append(drink3);
+	
+	//third drink color
+	var drink3Color = $("<div>");
+	$(drink3Color).html(drinkList.drinklist[2].color);
+	$("#drink3Color").append(drink3Color);
+	
+	//fourth drink
+	var drink4 = $("<div>");
+	$(drink4).html(drinkList.drinklist[3].name);
+	$("#drink4").append(drink4);
+	
+	//fourth drink color
+	var drink4Color = $("<div>");
+	$(drink4Color).html(drinkList.drinklist[3].color);
+	$("#drink4Color").append(drink4Color);
 }
 
-console.log("Random stuff 1");
+console.log("Random stuff 1");//This will appear above "Random Stuff 2" in the console because that will only work when the document is ready.
