@@ -20,6 +20,7 @@ function drinksLoaded(){
 	console.log("Random stuff 2");//test of document ready. Should load after "Random stuff 1".
 	var someDiv = $("<div>");//created a div w/ jQuery
 	$(someDiv).html("Learn about drinks!");//added html w/ text "Learn about drinks!" to the new div.
+	$("#showData").append(someDiv);//The html from someDiv has been put into the showData id.
 	
 	
 }
