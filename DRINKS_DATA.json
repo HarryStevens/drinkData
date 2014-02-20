@@ -1,15 +1,24 @@
-		{"name":"root beer",
-				"caffeine":false,
-				"color":"black"},
-
-				{"name":"grape juice",
-				"caffeine":false,
-				"color":"purple"},
-
-				{"name":"coffee",
-				"caffeine":true,
-				"color":"black"},
-
-				{"name":"red bull",
-				"caffeine":true,
-				"color":"red"}
+{
+    "drinklist": [
+        {
+            "name": "root beer",
+            "caffeine": false,
+            "color": "black"
+        },
+        {
+            "name": "grape juice",
+            "caffeine": false,
+            "color": "purple"
+        },
+        {
+            "name": "coffee",
+            "caffeine": true,
+            "color": "black"
+        },
+        {
+            "name": "red bull",
+            "caffeine": true,
+            "color": "red"
+        }
+    ]
+}
