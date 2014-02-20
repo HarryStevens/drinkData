@@ -17,3 +17,9 @@ h1 {
 div {
 	margin-bottom:15px;
 }
+.footer {
+	margin-bottom:0px;
+	font-style:italic;
+	color:#C0C0C0;
+	font-size:11px;
+}
