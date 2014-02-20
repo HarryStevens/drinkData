@@ -24,9 +24,10 @@ function drinksLoaded(){
 	$.get("DRINKS_DATA.json",loadJSON,"json");//jQuery: loading JSON file (paramaters:"fileName",function,"fileType")
 }
 
-//This funciton will load the data from DRINKS_DATA.json and display some of it on the page
+//This funciton will load the data from DRINKS_DATA.json and display some of it in the consloe
 function loadJSON(drinkList){
-	console.log(drinkList.drinklist[0].color);
+	console.log(drinkList.drinklist[0].color);//console logging the color of my first drink
+	var dataDiv = $("<div>");//gonna try to make another div to show my data
 }
 
 console.log("Random stuff 1");
