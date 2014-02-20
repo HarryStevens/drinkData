@@ -23,3 +23,10 @@ div {
 	color:#C0C0C0;
 	font-size:11px;
 }
+
+/*This doesn't work. Hard to understand why.*/
+#showData {
+	text-align:center
+	text-decoration:underline;
+	font-weight:bold;
+}
