@@ -27,7 +27,24 @@ function drinksLoaded(){
 //This funciton will load the data from DRINKS_DATA.json and display some of it in the consloe
 function loadJSON(drinkList){
 	console.log(drinkList.drinklist[0].color);//console logging the color of my first drink
-	var dataDiv = $("<div>");//gonna try to make another div to show my data
+	
+	
+	//With the assignment completed, I will try to figure out how to show some data on the page.
+	
+	//first drink
+	var drink1 = $("<div>");
+	$(drink1).html(drinkList.drinklist[0].name);
+	$("#drink1").append(drink1);
+	
+	//first drink color
+	var drink1Color = $("<div>");
+	$(drink1Color).html(drinkList.drinklist[0].color);
+	$("#drink1Color").append(drink1Color);
+	
+	//first drink caffeine?
+	var drink1Caff = $("<div>");
+	$(drink1Caff).html(drinkList.drinklist[0].caffeine);
+	$("#drink1Caff").append(drink1Caff);
 }
 
 console.log("Random stuff 1");
