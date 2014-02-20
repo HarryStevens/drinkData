@@ -19,7 +19,7 @@ $(document).ready(drinksLoaded);
 function drinksLoaded(){
 	console.log("Random stuff 2");//test of document ready. Should load after "Random stuff 1".
 	var someDiv = $("<div>");//jQuery: created a div
-	$(someDiv).html("Learn about drinks!");//jQuery: added html w/ text "Learn about drinks!" to the new div.
+	$(someDiv).html("Drinks Data:");//jQuery: added html w/ text "Learn about drinks!" to the new div.
 	$("#showData").append(someDiv);//jQuery: html from someDiv has been put into the showData id.
 	$.get("DRINKS_DATA.json",loadJSON,"json");//jQuery: loading JSON file (paramaters:"fileName",function,"fileType")
 }
@@ -41,10 +41,16 @@ function loadJSON(drinkList){
 	$(drink1Color).html(drinkList.drinklist[0].color);
 	$("#drink1Color").append(drink1Color);
 	
-	//first drink caffeine?
-	var drink1Caff = $("<div>");
-	$(drink1Caff).html(drinkList.drinklist[0].caffeine);
-	$("#drink1Caff").append(drink1Caff);
+	//second drink
+	var drink2 = $("<div>");
+	$(drink2).html(drinkList.drinklist[1].name);
+	$("#drink2").append(drink2);
+	
+	//second drink color
+	var drink2Color = $("<div>");
+	$(drink2Color).html(drinkList.drinklist[1].color);
+	$("#drink2Color").append(drink2Color);
+
 }
 
 console.log("Random stuff 1");
