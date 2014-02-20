@@ -3,10 +3,12 @@ body {
 	border-width:2px;
 	margin:0 auto;
 	display:table;
-	width:550px;
+	width:450px;
 	padding:10px;
 	margin-top:10px;
 	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:0px;
+	padding-bottom:0px;
 }
 h1 {
 	text-align:center;
@@ -22,6 +24,11 @@ div {
 	font-style:italic;
 	color:#C0C0C0;
 	font-size:11px;
+	text-align:left;
+}
+.bodyData {
+	text-align:center;
+	text-transform:capitalize;
 }
 
 /*This doesn't work. Hard to understand why.*/
