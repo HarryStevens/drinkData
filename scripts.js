@@ -18,11 +18,15 @@ $(document).ready(drinksLoaded);
 //This function will create a div w/ some text and add it to html. It will also grab the json data.
 function drinksLoaded(){
 	console.log("Random stuff 2");//test of document ready. Should load after "Random stuff 1".
-	var someDiv = $("<div>");//created a div w/ jQuery
-	$(someDiv).html("Learn about drinks!");//added html w/ text "Learn about drinks!" to the new div.
-	$("#showData").append(someDiv);//The html from someDiv has been put into the showData id.
-	
-	
+	var someDiv = $("<div>");//jQuery: created a div
+	$(someDiv).html("Learn about drinks!");//jQuery: added html w/ text "Learn about drinks!" to the new div.
+	$("#showData").append(someDiv);//jQuery: html from someDiv has been put into the showData id.
+	$.get("DRINKS_DATA.json",loadJSON,"json");//jQuery: loading JSON file (paramaters:"fileName",function,"fileType")
+}
+
+//This funciton will load the data from DRINKS_DATA.json and display some of it on the page
+function loadJSON(drinkList){
+	console.log(drinkList.drinklist[0].color);
 }
 
 console.log("Random stuff 1");
